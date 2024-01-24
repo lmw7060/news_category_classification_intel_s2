@@ -30,7 +30,7 @@ driver = webdriver.Chrome(service=service, options=options)
 page = [105,105,105,81,105,81]
 
 df_titles = pd.DataFrame()
-for l in range(6):      #카테고리에 따른 페이지
+for l in range(2):      #카테고리에 따른 페이지
     section_url = 'https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=10{}'.format(l)
     titles=[]
     for k in range(1,page[l]):        #카테고리안의 페이지를 정하는 것
